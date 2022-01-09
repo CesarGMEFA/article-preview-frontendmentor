@@ -1,0 +1,39 @@
+.container {
+    margin-right: 20px;
+    width: 70%;
+    max-width: 980px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr; */
+}
+.container-box {
+    display: flex;
+    flex-direction: column;
+}
+.container > img {
+    width: 40%;
+}
+
+.information p:first-child {
+    font-size: 2.4rem;
+    line-height: 2.7rem;
+}
+
+.information p:last-child {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+/* .container img {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.information {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.share {
+    grid-column: 2/3;
+    grid-row: 2/3;
+} */
