@@ -1,6 +1,5 @@
-const bottom = document.querySelector(".share-arrow");
-const bottomActive = document.querySelector(".active-arrow");
-const active = document.querySelector(".active");
+const bottom = document.getElementById('share-row');
+const active = document.getElementById("active");
 
 
 bottom.addEventListener('click', () => {

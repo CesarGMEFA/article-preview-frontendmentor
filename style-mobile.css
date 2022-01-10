@@ -118,6 +118,7 @@ body {
     background-color: var(--VeryDarkGrayish-Blue);
     transform: scale(0);
 }
+
 .activation {
     transform: scale(1);
 }
