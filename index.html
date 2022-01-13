@@ -11,7 +11,8 @@
 
   <link rel="stylesheet" href="/normalize.css">
   <link rel="stylesheet" href="style-mobile.css">
-  <link rel="stylesheet" href="style-desktop.css" media="(min-width: 900px)">
+  <link rel="stylesheet" href="style-laptop.css" media="(min-width: 900px)">
+  <link rel="stylesheet" href="style-desktop.css" media="(min-width: 1369px)">
   
   <title>Frontend Mentor | Article preview component</title>
 
@@ -42,14 +43,15 @@
               <p>28 Jun 2020</p>
             </div>
           </div>
-         <button id="share-row" class="share-arrow">
-          <img src="./images/icon-share.svg" alt="">
-         </button>
+          <img id="share-row" class="share-arrow" src="./images/icon-share.svg" alt="icono de flecha para compartir en redes sociales.">
+         <!-- <button id="share-row" class="share-arrow">
+          <img id="share-row_img" src="./images/icon-share.svg" alt="icono de flecha para compartir en redes sociales.">
+         </button> -->
         </div>
   
         <div id="active" class="active">
           <div class="active-share">
-            <span>SHARE</span>
+            <p id="active-share_p">SHARE</p>
             <a target="_blank" href="https://www.facebook.com">
               <img src="./images/icon-facebook.svg" alt="foto del logo-tipo de Facebook">
             </a>
@@ -60,9 +62,8 @@
               <img src="./images/icon-pinterest.svg" alt="foto del logo-tipo de Pinterest">
             </a>
           </div>
-          <a href="./" class="active-arrow">
-            <img src="./images/icon-share-white.svg" alt="">
-          </a>
+          <img class="active-arrow" src="./images/icon-share-white.svg" alt="">
+          <div id="square"></div>
         </div>
     </div>
   </div>
@@ -70,7 +71,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/CesarGMEFA/">Cesar Mejias</a>.
   </div>
   <script src="./index.js"></script>
 </body>

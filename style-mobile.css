@@ -31,11 +31,15 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
 }
 
 .container img {
     object-fit: cover;
+}
+
+.container-box {
+    position: relative;
 }
 
 .information {
@@ -97,23 +101,26 @@ body {
     font-size: 1.4rem;
 }
 
-.share-arrow {
+.share-arrow,
+.active-arrow {
+    padding: 12px;
     text-align: center;
-    line-height: 47px;
-    width: 45px;
-    height: 45px;
-    background-color: var(--LightGrayishBlue);
+    width: 15px;
+    height: 13px;
     border-radius: 50%;
+}
+.share-arrow {
+    background-color: var(--LightGrayishBlue);
 }
 
 .active {
     width: 100%;
-    padding: 12px 0px;
+    padding: 18px 0px;
     /* margin-bottom: 12px; */
     position: absolute;
     bottom: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--VeryDarkGrayish-Blue);
     transform: scale(0);
@@ -126,9 +133,10 @@ body {
 .active-share {
     display: flex;
     align-items: center;
+    margin-left: 30px;
 }
 
-.active-share > span {
+.active-share > p {
     color: var(--LightGrayishBlue);
     font-weight: 100;
     letter-spacing: 3px;
@@ -140,12 +148,9 @@ body {
 }
 
 .active-arrow {
-    text-align: center;
-    line-height: 47px;
-    width: 45px;
-    height: 45px;
+    margin-right: 25px;
+    margin-bottom: 8px;
     background-color: var(--DesaturatedDarkBlue);
-    border-radius: 50%;
 }
 
 .attribution {
