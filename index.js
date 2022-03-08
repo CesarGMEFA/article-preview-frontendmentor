@@ -16,11 +16,7 @@ bottom.addEventListener('click', () => {
 
 window.addEventListener('click', e => {
     console.log(e.target)
-    if ( e.target !== bottom &&  
-        e.target !== active && 
-        active.classList.contains("activation") &&
-        e.target !== paragraph &&
-        e.target !== arrow) 
+    if ( e.target !== bottom && e.target !== active && active.classList.contains("activation") && e.target !== paragraph && e.target !== arrow) 
     {
         active.classList.toggle("activation");
     };
